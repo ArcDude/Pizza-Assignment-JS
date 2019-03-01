@@ -62,19 +62,6 @@ function getMeat(runningTotal,text1) {
 		meatTotal = 0;
 	}
 	runningTotal = (runningTotal + meatTotal);
-	for (var j = 0; j < selectedMeat.length; j++) {
-			text1 = text1+selectedMeat[j]+"<br>";
-			if (meatCount <= 1) {
-				text2 = text2 + 0 + "<br>";
-				meatCount = meatCount - 1;
-			} else if (meatCount == 2) {
-				text2 = text2 + 1 + "<br>";
-				meatCount = meatCount - 1;
-			} else {
-				text2 = text2 + 1 + "<br>";
-				meatCount = meatCount - 1;
-			}
-	}
 	console.log("total selected meat items: "+meatCount);
 	console.log(meatCount+" meat - 1 free meat = "+"$"+meatTotal+".00");
 	console.log("meat text1: "+text1);
